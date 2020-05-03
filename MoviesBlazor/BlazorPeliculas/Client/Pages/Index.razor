@@ -1,0 +1,55 @@
+﻿@page "/"
+@inject SingletonService singleton
+@inject IRepository repositoy
+
+<p> El valor del Singlenton es: @singleton.Value</p>
+<div>
+    <h3>Movies</h3>
+
+    <MoviesList Movies="repositoy.GetAllMovies()" />
+</div>
+
+<div>
+    <h2>
+        Crear nueva pelicula
+    </h2>
+    @*<TextBoxExample placeholder="Movie Name" disabled="true"/>*@
+    @*<TextBoxExample @attributes="ParametersTexboxExample"/>*@
+    <TextBoxExample placeholder="placeholder Index" />
+</div>
+<button @onclick="AddMovie">Agregar Pelicula</button>
+@code{
+    string name = "Zaher";
+
+    private List<Movie> Movies;
+    private Dictionary<string, object> ParametersTexboxExample = new Dictionary<string, object>()
+{ {"placeholder","New placeholder 2" },
+        {"disabled","true" } };
+
+    //private List<Movie> GetAllMovies()
+    //{
+    //    //return new List<Movie>();
+    //    return new List<Movie>()
+    //{
+    //        new Movie(){ Title = "Titanic", Releasing = DateTime.Now},
+    //        new Movie(){ Title = "SpiderMan", Releasing = DateTime.Now},
+    //        new Movie(){ Title = "Moana", Releasing = DateTime.Now}
+    //    };
+    //}
+    void AddMovie()
+    {
+        Movies.Add(new Movie() { Title = "New Movie", Releasing = DateTime.Today });
+    }
+    public Movie SpiderMan { get { return GetMovies(); } }
+
+
+    private Movie GetMovies()
+    {
+        return new Movie()
+        {
+            Title = "Titanic",
+            Releasing = DateTime.Now
+        };
+
+    }
+}

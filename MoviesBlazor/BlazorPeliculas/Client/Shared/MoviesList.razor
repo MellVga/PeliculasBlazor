@@ -1,0 +1,31 @@
+﻿@inject IJSRuntime js
+
+@*<input type="checkbox" @onchange="@(()=> ShowingButtons = !ShowingButtons)"/>*@
+@*//DataBinding*@
+<input type="checkbox" @bind="ShowingButtons" />
+
+<GenericList MyList="Movies">
+    <HayRegistros Context="movie">
+        <IndividualMovie Movie="movie" DeleteMovie="DeleteMovie" ButtonShowing="ShowingButtons" />
+    </HayRegistros>
+</GenericList>
+
+
+@code {
+    [Parameter] public List<Movie> Movies { get; set; }
+    //[Parameter] public RenderFragment Loading { get; set; }
+    //[Parameter] public RenderFragment NoRecords { get; set; }
+    bool ShowingButtons = false;
+
+    async Task DeleteMovie(Movie movie)
+    {
+        var confirmed = await js.Confirm($"Would you like deleting this movie {movie.Title}?");
+
+        if (confirmed)
+        {
+
+            Movies.Remove(movie);
+            Console.WriteLine($"A movie has been deleted the movie {movie.Title}");
+        }
+    }
+}

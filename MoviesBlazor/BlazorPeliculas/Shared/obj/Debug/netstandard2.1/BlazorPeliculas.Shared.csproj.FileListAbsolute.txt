@@ -1,0 +1,8 @@
+C:\Users\MelanyVega\Documents\MellVga\BLAZOR-COURSE\BlazorPeliculas\BlazorPeliculas\Shared\bin\Debug\netstandard2.1\BlazorPeliculas.Shared.deps.json
+C:\Users\MelanyVega\Documents\MellVga\BLAZOR-COURSE\BlazorPeliculas\BlazorPeliculas\Shared\bin\Debug\netstandard2.1\BlazorPeliculas.Shared.dll
+C:\Users\MelanyVega\Documents\MellVga\BLAZOR-COURSE\BlazorPeliculas\BlazorPeliculas\Shared\bin\Debug\netstandard2.1\BlazorPeliculas.Shared.pdb
+C:\Users\MelanyVega\Documents\MellVga\BLAZOR-COURSE\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\netstandard2.1\BlazorPeliculas.Shared.csproj.CoreCompileInputs.cache
+C:\Users\MelanyVega\Documents\MellVga\BLAZOR-COURSE\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\netstandard2.1\BlazorPeliculas.Shared.AssemblyInfoInputs.cache
+C:\Users\MelanyVega\Documents\MellVga\BLAZOR-COURSE\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\netstandard2.1\BlazorPeliculas.Shared.AssemblyInfo.cs
+C:\Users\MelanyVega\Documents\MellVga\BLAZOR-COURSE\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\netstandard2.1\BlazorPeliculas.Shared.dll
+C:\Users\MelanyVega\Documents\MellVga\BLAZOR-COURSE\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\netstandard2.1\BlazorPeliculas.Shared.pdb
